@@ -1,0 +1,83 @@
+:root {
+  --chili: #c8261b;
+  --chili-deep: #8f150e;
+  --jade: #eaf4ee;
+  --peppercorn: #2f7d5b;
+  --ink: #1d0a08;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  min-height: 100%;
+  background: var(--chili);
+  color: var(--jade);
+}
+
+.home {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2.5rem;
+  max-width: 44rem;
+  margin: 0 auto;
+  padding: 3rem 1.5rem;
+}
+
+.home h1 {
+  margin: 0;
+  font-weight: 800;
+  font-size: clamp(3rem, 14vw, 6.5rem);
+  line-height: 1.05;
+  letter-spacing: -0.01em;
+}
+
+.home p {
+  margin: 0.75rem 0 0;
+  font-size: 1.125rem;
+  color: rgba(234, 244, 238, 0.85);
+}
+
+.home nav {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.home a {
+  display: block;
+  padding: 1.1rem 1.25rem;
+  border-radius: 0.5rem;
+  background: var(--jade);
+  color: var(--ink);
+  font-weight: 500;
+  font-size: 1.25rem;
+  text-decoration: none;
+}
+
+.home a small {
+  display: block;
+  font-weight: 400;
+  font-size: 0.9rem;
+  color: var(--chili-deep);
+}
+
+.home a:hover {
+  background: #fff;
+}
+
+.home a:focus-visible {
+  outline: 3px solid var(--ink);
+  outline-offset: 3px;
+}
+
+.home .note {
+  font-size: 0.9rem;
+  color: rgba(234, 244, 238, 0.7);
+}
